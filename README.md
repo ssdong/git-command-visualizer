@@ -8,7 +8,7 @@ and understanding them through visualization. This project is powered by `scalaJ
 with FE ecosystem that allows writing the UI smoothly. The rest and core logics are vanilla Scala that handles parsing
 user inputs, manipulating and maintaining various internal tree structures and updating them correspondingly.
 
-![Visualizer](img.png)
+![Visualizer](sample.png)
 
 ## Where can I play with it?
 
