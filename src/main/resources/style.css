@@ -11,7 +11,8 @@ h1 {
   padding-bottom: 10px;
 }
 
-#description {
+.project-description {
+  font-family: sans-serif;
   max-width: 1315px;
   margin: 0 auto;
   padding-bottom: 10px;
