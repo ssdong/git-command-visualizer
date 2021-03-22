@@ -39,6 +39,7 @@ a successful commit .
 ## Future changes
 * Support cherry-pick command
 * UI improvements. Terminal automatically scroll down when user type commands
+* The bouncing behavior of the nodes may seem a bit annoying. There might be room for improvements with no physics and no overlapping.
 
 ## Miscellaneous
 * The rendering of the git tree is powered by VisJS with a Scala-wrapper that I had implemented. It comes naturally with
