@@ -35,6 +35,11 @@ a successful commit .
     6. `git revert`
        - `git revert <commit>`
     
+
+## Future changes
+* Support cherry-pick command
+* UI improvements. Terminal automatically scroll down when user type commands
+
 ## Miscellaneous
 * The rendering of the git tree is powered by VisJS with a Scala-wrapper that I had implemented. It comes naturally with
 a physics bouncing behaviour. The nodes allow dragging and resizing.
