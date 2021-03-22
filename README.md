@@ -34,6 +34,10 @@ Here! [Try me](http://github.com)
 * The rendering of the git tree is powered by VisJS with a Scala-wrapper that I had implemented. It comes naturally with
 a physics bouncing behaviour. The nodes allow dragging and resizing.
 
+
+## How to run locally
+Simply clone the project and run `sbt dev` in the terminal. It will be ready on `localhost:8080`!
+
 ## Credits
 The idea of this project is inspired by [explain git with d3](https://onlywei.github.io/explain-git-with-d3/). The author
 was once my supervisor, and he is one of the best. :)
