@@ -12,7 +12,7 @@ user inputs, manipulating and maintaining various internal tree structures and u
 
 ## Where can I play with it?
 
-Here! [Try me](http://github.com)
+Here! [Try me](https://ssdong.github.io/git-command-visualizer-tool/)
 
 ## Release
 * 2021-03-20
