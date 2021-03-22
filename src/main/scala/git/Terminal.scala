@@ -131,6 +131,16 @@ import scala.util.{Failure, Success, Try}
               span(className := "terminal__prompt--branch")("(master) ")
             ),
             span(className := "terminal__prompt--command")("Welcome to Git Visualizer!")
+          ),
+          div(className := "terminal__prompt")(
+            span(className := "terminal__prompt--wrapper")(
+              span(className := "terminal__prompt--user")("git-visualizer@susu-gv-m136:"),
+              span(className := "terminal__prompt--location")("~"),
+              span(className := "terminal__prompt--bling")(s"$$ "),
+              span(className := "terminal__prompt--context")("(local)"),
+              span(className := "terminal__prompt--branch")("(master) ")
+            ),
+            span(className := "terminal__prompt--success")("Try typing", br(), "\"git commit -m msg\" :)")
           )
         ),
         section(id := "terminal__input")(
