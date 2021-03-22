@@ -14,6 +14,9 @@ user inputs, manipulating and maintaining various internal tree structures and u
 
 Here! [Try me](https://ssdong.github.io/git-command-visualizer-tool/)
 
+Simply by hitting `git commit -m <message>` and it will create a commit node for you. You don't have to create anything to make
+a successful commit .
+
 ## Release
 * 2021-03-20
   * Supported git commands
