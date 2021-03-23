@@ -5,8 +5,9 @@
 I felt an urge to do something with Scala. Git concepts are proved to be complicated, and I used to have issues of
 comprehending them. Git Commands Visualizer is my humblest effort to help close the gap between complex git concepts
 and understanding them through visualization. This project is powered by `scalaJs` and `slinky`for their great integration
-with FE ecosystem that allows writing the UI smoothly. The rest and core logics are vanilla Scala that handles parsing
-user inputs, manipulating and maintaining various internal tree structures and updating them correspondingly.
+with FE ecosystem that allows writing the UI smoothly. The rest and core logic are vanilla Scala that handles from parsing
+user inputs, manipulating and maintaining various internal tree structures til rendering them on screen. It truly shows
+what Scala is capable of doing. 
 
 ![Visualizer](sample.png)
 
