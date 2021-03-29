@@ -44,7 +44,8 @@ object GitCommands {
             case Seq(singleWordMessage) => Success(singleWordMessage)
             case Seq(head, tail @ _*) =>
               if (head.startsWith("\"") && tail.last.endsWith("\"")) Success(gitMessage.mkString(" "))
-              else Failure(new RuntimeException("error: multiple words message should be wrapped in double quotes"))
+              else
+                Failure(new RuntimeException("error: message with multiple words should be wrapped in double quotes"))
           }
         case _ => Failure(new RuntimeException(s"Invalid args: ${args.mkString(" ")}"))
       }
