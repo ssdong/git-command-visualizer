@@ -38,7 +38,14 @@ object GitCommands {
 
     override def invoke(fullCommand: String, args: Array[String]): Try[String] = {
       val parseArgs = args match {
-        case Array("-m", gitMessage, _*) => Success(gitMessage)
+        case Array("-m", gitMessage @ _*) =>
+          gitMessage match {
+            case Seq() => Failure(new RuntimeException("error: switch `m' requires a value"))
+            case Seq(singleWordMessage) => Success(singleWordMessage)
+            case Seq(head, tail @ _*) =>
+              if (head.startsWith("\"") && tail.last.endsWith("\"")) Success(gitMessage.mkString(" "))
+              else Failure(new RuntimeException("error: multiple words message should be wrapped in double quotes"))
+          }
         case _ => Failure(new RuntimeException(s"Invalid args: ${args.mkString(" ")}"))
       }
 
