@@ -20,7 +20,7 @@ object CommonUtils {
         case (_, children) if children.nonEmpty =>
           children.foldLeft(Array.empty[CommitNode]) { (result, child) =>
             val childResult = findCommitFoldLeft(commit, child)
-            if (findCommitFoldLeft(commit, child).nonEmpty) result ++ childResult else result
+            if (childResult.nonEmpty) result ++ childResult else result
           }
         case (_, _) => Array.empty[CommitNode]
       }

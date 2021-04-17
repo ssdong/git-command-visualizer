@@ -328,21 +328,10 @@ object GitTree {
         (originGitHistory, CommonUtils.findAllPaths(localGitHistory, targetNodeHash))
     }
 
-    for (path <- paths) {
-      for (node <- path)
-        print(s"${node.hash} ")
-      println()
-    }
     // Add new paths to origin and update the graph
     for (path <- paths)
       // Drop the first node since it already exists in the origin context
       CommonUtils.addPath(mergingNodeOnOrigin, path.drop(1))
-
-    for (path <- paths) {
-      for (node <- path)
-        print(s"${node.hash}")
-      println()
-    }
 
     originBranchToCommit += (branch -> paths(0).last)
 
